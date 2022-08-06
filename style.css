@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+.header {
+  width: 100%;
+  background-color: rgb(37, 34, 34);
+}
+
+.nav {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 70%;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+}
+.nav-links li {
+  padding: 10px 0;
+  margin: 0 3px;
+}
+.nav-links li a {
+  color: lightgray;
+  padding: 0 10px;
+}
+.nav-links li .active {
+  color: #fff;
+  font-weight: bold;
+}
+.nav .btn {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 4px 20px;
+}
+
+/* body section */
+.body-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-section-container {
+  width: 60%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.user-box {
+  width: 100%;
+  height: 300px;
+}
+.user-header {
+  width: 100%;
+  height: 80px;
+  background-color: #1ac6ff;
+  border: 3px solid #1ac6ff;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.user-pic {
+  background-color: #fff;
+  border: 3px solid lightgrey;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 18px;
+  top: 45px;
+}
+.user-pic > i {
+  font-size: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.content-container {
+  background-color: #fff;
+  border: 3px solid lightgrey;
+  border-top: none;
+  width: 100%;
+  height: 220px;
+}
+.inner-content-container {
+  padding-top: 35px;
+  padding-left: 20px;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.inner-content-container > p > img {
+  height: 18px;
+  margin-right: 6px;
+}
+.education-box {
+  width: 100%;
+  margin-top: 30px;
+}
+.education-hedear,
+.sidebar-connections-header-box {
+  background-color: #3d3d3d;
+  border: 3px solid #3d3d3d;
+  color: #fff;
+  padding: 10px 20px;
+}
+.education-main-body {
+  background-color: #fff;
+  border: 3px solid lightgrey;
+  border-top: none;
+  padding: 10px 20px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.education-main-body > p > strong {
+  font-size: 1.3rem;
+}
+.date {
+  color: grey;
+}
+.programing-language {
+  font-size: 0.9rem;
+}
+
+/* sidebar */
+.side-container {
+  width: 35%;
+  min-height: 300px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.connection-request-box {
+  width: 90%;
+}
+.sidebar-connections-header-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.number {
+  background-color: lightgrey;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.individual-person-request {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border: 3px solid lightgrey;
+  border-top: none;
+}
+.individual-person-request li {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+.individual-person-request > li > .person-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 3;
+}
+.individual-person-request > li > .person-name > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.individual-person-request > li > .person-name > .name {
+  width: 70%;
+  text-transform: capitalize;
+}
+.individual-person-request > li > .icons-box {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.individual-person-request > li > .icons-box > img {
+  width: 25px;
+  height: 25px;
+}
+.follower-numbers {
+  background-color: lightgrey;
+  color: #000;
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-more-connections {
+  background-color: #fff;
+  border: 3px solid lightgrey;
+  border-top: none;
+  padding: 7px 25px;
+}
