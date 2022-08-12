@@ -48,12 +48,12 @@
           </div>
           <div class="content-container">
             <div class="inner-content-container">
-              <h1>Jane Doe</h1>
+              <h1 id="edit">Jane Doe</h1>
               <p><img src="./icons/map-marker.png" alt="" /> Seattle</p>
               <p>Developer | Engineer | Problem Solver</p>
               <p>Master of shadows and the Internet</p>
               <div class="edit">
-                <a href="#"
+                <a href="#" onclick="changeName()"
                   ><i class="fa fa-cog" aria-hidden="true"></i> edit profile</a
                 >
               </div>
@@ -81,31 +81,51 @@
             <h3>Connection Requests</h3>
           </div>
           <ul class="individual-person-request">
-            <li>
+            <li id="remove1">
               <div class="person-name">
                 <img src="./images/todd-s.jpg" alt="Todd E" />
                 <div class="name">todd e</div>
               </div>
               <div class="icons-box">
-                <img src="./icons/accept-circle.png" alt="accept icon" />
-                <img src="./icons/close-circle.png" alt="decline icon" />
+                <img
+                  id="increase1"
+                  src="./icons/accept-circle.png"
+                  alt="accept icon"
+                  onclick="addConnectionsNumber()"
+                />
+                <img
+                  id="decrease1"
+                  src="./icons/close-circle.png"
+                  alt="decline icon"
+                  onclick="removeConectionRequest1()"
+                />
               </div>
             </li>
-            <li>
+            <li id="remove2">
               <div class="person-name">
                 <img src="./images/phil-s.jpg" alt="Phil K" />
                 <div class="name">Phil K</div>
               </div>
               <div class="icons-box">
-                <img src="./icons/accept-circle.png" alt="accept icon" />
-                <img src="./icons/close-circle.png" alt="decline icon" />
+                <img
+                  id="increase2"
+                  src="./icons/accept-circle.png"
+                  alt="accept icon"
+                  onclick="addConnectionsNumber()"
+                />
+                <img
+                  id="decrease2"
+                  src="./icons/close-circle.png"
+                  alt="decline icon"
+                  onclick="removeConectionRequest2()"
+                />
               </div>
             </li>
           </ul>
         </div>
         <div class="connection-request-box">
           <div class="sidebar-connections-header-box">
-            <div class="follower-numbers">500+</div>
+            <div class="follower-numbers">500</div>
             <h3>Your Connections</h3>
           </div>
           <ul class="individual-person-request">
@@ -140,5 +160,6 @@
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
